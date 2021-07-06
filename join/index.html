@@ -14,16 +14,25 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </style>
 <body>
 
-<!-- Navbar -->
+<!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a>
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="ucladb.github.io/join" class="w3-bar-item w3-button">TEAM</a>
+      <a href="ucladb.github.io/join" class="w3-bar-item w3-button"><i class="fa fa-user"></i> JOIN </a>
+      <a href="ucladb.github.io/faq" class="w3-bar-item w3-button"><i class="fa fa-th"></i> FAQ</a>
+      <a href="ucladb.github.io/gallery" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> GALLERY</a>
+      <a href="ucladb.github.io/support" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> SUPPORT </a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
+</div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
@@ -36,21 +45,22 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <!-- Header -->
 <header class="w3-container w3-red w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">START PAGE</h1>
-  <p class="w3-xlarge">Template by w3.css</p>
-  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
+  <h1 class="w3-margin w3-jumbo">JOIN US</h1>
+  <p class="w3-xlarge">Want to be part of UCLA Dragon Boat?</p>
+  <p class="w3-xlarge">Join the Fall 2021 Recruitment Cycle!</p>
+  <button onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSeLrpuY2rnzeI2zAjyJNAmV7hWoVVJh4l6ILlzhjJ_OvOZicw/viewform';" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Interest Form</button>
 </header>
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+      <h1>Fall 2021 Tryout Schedule </h1>
+      <h5 class="w3-padding-32"> </h5>
 
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="w3-text-grey">All UCLA students are welcome to try out regardless of fitness level or experience! We will teach you the skills and techniques required to paddle and help you become the best paddler you can be!</p>
+      <p class="w3-text-grey">Once on the team, you will be expected to attend land practices and gym sessions throughout the week in addition to boat practices on the weekends at Mother's Beach. We hope to see you at tryouts and look forward to you joining our UCLADB family!</p>
+      <p class="w3-text-grey">For general question, please refer to the FAQ page, message us on Facebook, or email us at dragonboat@ucla.edu</p>
     </div>
 
     <div class="w3-third w3-center">
