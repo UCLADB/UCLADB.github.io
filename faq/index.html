@@ -1,1 +1,132 @@
 <!DOCTYPE html>
+<html>
+<title>UCLA Dragonboat</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("faqheader.jpg");
+  min-height: 100%;
+  opacity: 0.75;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="/about" class="w3-bar-item w3-button">TEAM</a>
+      <a href="/join" class="w3-bar-item w3-button"></i> JOIN </a>
+      <a href="/faq" class="w3-bar-item w3-button"></i> FAQ</a>
+      <a href="/gallery" class="w3-bar-item w3-button"></i> GALLERY</a>
+      <a href="/support" class="w3-bar-item w3-button"></i> SUPPORT </a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="/about" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="/join" onclick="w3_close()" class="w3-bar-item w3-button">JOIN</a>
+  <a href="/faq" onclick="w3_close()" class="w3-bar-item w3-button">FAQ</a>
+  <a href="/gallery" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
+  <a href="/support" onclick="w3_close()" class="w3-bar-item w3-button">SUPPORT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-center w3-text-white" style="padding:64px">
+    <span class="w3-jumbo w3-hide-small">FREQUENTLY ASKED QUESTIONS</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">FREQUENTLY ASKED QUESTIONS</span><br>
+  </div>
+</header>
+
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="faq">
+	<div class="w3-row w3-padding-32">
+	    <h2 class="w3-wide">What is Dragon Boat?</h2>
+	    <p class="w3-justify">Originating in Southern China over 2000 years ago, Dragon Boating was traditionally used for religious ceremonies and cultural festivals. Now, it has evolved into a competitive water sport involving narrow canoes with ten rows of two paddlers each, a steersman, and a drummer. With decorative drgon ornaments on the boats during competitions, teams work in unison to be the fastest boat in the water.</p>
+	</div>
+	<div class="w3-row w3-padding-32">
+	    <h2 class="w3-wide">Is Dragon Boat like Rowing?</h2>
+	    <p class="w3-justify">While both water sports involving boats, Dragon Boat and Rowing are largely different. Rowing derives from a Western background where rowers sit one per row with their back towards the direction of travel and oars on either side. On the other hand, Dragon Boaters face forward, two per row, paddling on only one side.</p>
+	</div>
+	<div class="w3-row w3-padding-32">
+	    <h2 class="w3-wide">Who is eligible to join?</h2>
+	    <p class="w3-justify">Anyone is welcome to try out for the team as long as they are a UCLA student! Check out or Recruitment page for more information.</p>
+	</div>
+	<div class="w3-row w3-padding-32">
+	    <h2 class="w3-wide">Is experience needed?</h2>
+	    <p class="w3-justify">Nope! We'll teach you how to paddle and after that, techniques and training to help you become a stronger paddler.</p>
+	</div>
+	<div class="w3-row w3-padding-32">
+	    <h2 class="w3-wide">Can I try out more than once?</h2>
+	    <p class="w3-justify">Of course!</p>
+	</div>
+	<div class="w3-row w3-padding-32">
+	    <h2 class="w3-wide">What if I don't have my own equiptment?</h2>
+	    <p class="w3-justify">We have team equiptment (paddles and PFD's) that you can rent.</p>
+	</div>
+	<div class="w3-row w3-padding-32">
+	    <h2 class="w3-wide">Do I need to know how to swim?</h2>
+	    <p class="w3-justify">Nope! We wear PFD's on the boat.</p>
+	</div>
+	<div class="w3-row w3-padding-32">
+	    <h2 class="w3-wide">What is the expected hourly commitment?</h2>
+	    <p class="w3-justify">We expect team members to commit 15-17 hours in a normal week to practice and train with the team.</p>
+	</div>
+	<div class="w3-row w3-padding-32">
+	    <h2 class="w3-wide">What are practices like?</h2>
+	    <p class="w3-justify">We have practice every day throughout the week except Fridays. On Mondays and Wednesdays, we have small gym sessions in order to get stronger. Land practices are held Tuesdays and Thursday evenings, where we work on endurance and practice together as an entire team. On weekends, we have boat practices to practice paddling on the water.</p>
+	</div>
+	<div class="w3-row w3-padding-32">
+	    <h2 class="w3-wide">How often and where do we race?</h2>
+	    <p class="w3-justify">We generally have one big race every quarter. During Fall, we attend College Cup in San Francisco. In Winter Quarter, we race at Arizona Dragon Boat Festival in Tempe, Arizona. For Spring Quarter, we compete in the Long Beach Spring Race in Long Beach. Over the Summer, we race at the Long Beach Dragon Boat Festival in Long Beach, while training for the Oakland Dragon Boat festival as well as the LA Dragon Boat Festival that take place in the beginning of Fall.</p>
+	</div>
+	<div class="w3-row w3-padding-32">
+	    <h2 class="w3-wide">How much are team fees?</h2>
+	    <p class="w3-justify">Annual dues total up to about $250. These fees go towards race registration, jerseys and apparel, transportation to and from practice, team essentials, and other events. If you have any questions or concerns, please don't hesitatie to reach out to our Cabinet.</p>
+	</div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
