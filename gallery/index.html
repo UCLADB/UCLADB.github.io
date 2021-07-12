@@ -126,14 +126,6 @@ body, html {
 </footer>
 
 <script language="JavaScript">
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
 
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
@@ -173,11 +165,11 @@ function showDivs(n) {
     x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
+    dots[i].className = dots[i].className.replace("w3-white", "");
   }
   x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-
+  dots[slideIndex-1].className += "w3-white";
+}
 </script>
 
 </body>
